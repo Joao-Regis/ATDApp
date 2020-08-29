@@ -1,0 +1,89 @@
+﻿@page
+@model ATDApp.WebSite.Pages.RequestList.CreateModel
+
+<br />
+<h2 class="text-info">Create New Request</h2>
+<br />
+
+<div class="border container" style="padding:30px">
+    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+    <form method="post">
+
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Request.RequestType"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Request.RequestType" class="form-control" />
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Request.LocationID"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Request.LocationID" class="form-control" />
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Request.FirstName"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Request.FirstName" class="form-control" />
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Request.LastName"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Request.LastName" class="form-control" />
+            </div>
+        </div>
+
+
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Request.Email"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Request.Email" class="form-control" />
+            </div>
+            <span asp-validation-for="Request.Email" class="text-danger"></span>
+        </div>
+        
+
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Request.NumberRacksMarked"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Request.NumberRacksMarked" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-3 offset-3">
+                <input type="submit" value="Create" class="btn btn-primary form-control" />
+            </div>
+            <div class="col-3">
+                <a asp-page="Index" class="btn btn-success form-control">Back to Request List</a>
+            </div>
+        </div>
+
+    </form>
+
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
