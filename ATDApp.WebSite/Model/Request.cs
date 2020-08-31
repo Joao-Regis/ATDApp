@@ -48,6 +48,5 @@ namespace ATDApp.WebSite.Model
 
         //public Byte[] SSMA_TimeStamp { get; set; }
 
-        //test
     }
 }
