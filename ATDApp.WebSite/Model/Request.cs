@@ -47,5 +47,7 @@ namespace ATDApp.WebSite.Model
         public String Priority { get; set; }
 
         //public Byte[] SSMA_TimeStamp { get; set; }
+
+        //test
     }
 }
